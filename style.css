@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant&family=Spartan&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "thewitcher";
+  src: url("https://aditibuket.s3.ap-south-1.amazonaws.com/Thewitcher-jnOj.ttf")
+    format("truetype");
+}
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(85, 85, 85);
+  background-color: rgb(36, 35, 35);
+}
+
+.wrapper {
+  margin: auto;
+  width: 90%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-title {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  inset: 0;
+  font-size: 2.5rem;
+  padding: 0.5em 0;
+  text-align: center;
+  font-family: "thewitcher", Spartan;
+  color: rgb(206, 202, 202);
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  background: no-repeat
+    url("/images/Gemini_Generated_Image_4x42324x42324x42.png");
+}
+.container {
+  inset: 0;
+  margin: 1em auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 380px;
+  background-color: rgb(32, 31, 30);
+  box-shadow: var(--shadow-elevation-medium);
+  transition: all 0.3s;
+  z-index: 102;
+  outline: 4px solid #83868a;
+  outline-offset: 2px;
+}
+.monsimg {
+  z-index: 2000;
+  transition: transform 0.5s;
+  display: block;
+  margin: 0 auto;
+}
+
+.leshenpng {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+  padding-bottom: 35px;
+}
+.griffinpng {
+  transform: scale(1.3);
+  filter: brightness(1.8);
+}
+.trollpng {
+  transform: scale(1.3) translateY(-30px);
+}
+.vampirepng {
+  transform: scale(1) translateY(-30px);
+  padding-left: 30px;
+}
+.wraithpng {
+  transform: scale(0.79) translateY(-119px);
+  transition: all 0.5s;
+}
+.succubuspng {
+  transform: scale(0.8) translateY(-65px);
+  padding-right: 20px;
+}
+.kikimorepng {
+  transform: scale(0.9);
+}
+
+.figure {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  background-color: rgb(10, 17, 12);
+  height: 350px;
+}
+
+.figure-leshen {
+  background-color: gray;
+  background: radial-gradient(closest-side, #6c7d9e, #292d39);
+  background: #52c234;
+  background: radial-gradient(closest-side, #2a4223, #1b3113);
+  background: #093028;
+  background: radial-gradient(closest-side, #2d694f, #1d5248);
+}
+
+.figure-griffin {
+  background-color: #464d61;
+}
+.figure-troll {
+  background: radial-gradient(closest-side, #6c7d9e, #292d39);
+}
+.figure-vampire {
+  background: #ab2e2e;
+}
+.figure-wraith {
+  background-color: #77b8b7;
+
+  background: linear-gradient(to right, rgb(124, 139, 141), rgb(44, 79, 83));
+}
+.figure-succubus {
+  background: radial-gradient(circle, #cf93ae 30%, #823e5c 80%);
+}
+.figure-kikimore {
+  background: radial-gradient(
+    circle,
+    rgb(225, 225, 253) 0%,
+    rgb(82, 82, 114) 100%
+  );
+}
+
+h3 {
+  text-transform: uppercase;
+  color: rgb(224, 222, 222);
+  text-align: center;
+  font-family: Spartan;
+  font-weight: 200;
+  letter-spacing: 1.2px;
+}
+
+h4 {
+  font-weight: 200;
+  font-family: Spartan;
+  letter-spacing: 0.9px;
+}
+.content {
+  padding: 0 1.4em;
+  text-align: left;
+}
+.content > .description {
+  margin-top: -10px;
+  font-family: Oswald;
+  letter-spacing: 0.9px;
+  font-weight: 100;
+  color: rgb(202, 202, 201);
+  font-size: 1rem;
+}
+
+.monster-image {
+  background-color: rgb(7, 32, 7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0;
+}
+
+.footer {
+  position: relative;
+  z-index: 10;
+  padding: 0em 0.5em 0em 0.5em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto 1em auto;
+  background-color: rgb(32, 31, 29);
+  box-shadow: 0 3.2px 7.2px 0 rgba(53, 53, 53, 0.132),
+    0 0.6px 1.8px 0 rgba(36, 35, 35, 0.108);
+}
+
+.footer-leshen {
+  background: #eb5757;
+  background-color: rgb(32, 31, 29);
+}
+
+.footer-griffin {
+  background: #833939;
+  background-color: rgb(32, 31, 29);
+}
+.footer-wraith {
+  background-color: rgb(40, 68, 71);
+  background-color: rgb(32, 31, 29);
+}
+.footer-succubus {
+  background-color: rgb(90, 55, 78);
+  background-color: rgb(32, 31, 29);
+}
+
+.footer-kikimore {
+  background-color: rgb(49, 49, 63);
+  background-color: rgb(32, 31, 29);
+}
+
+.details {
+  font-family: Oswald;
+  letter-spacing: 0.8px;
+  background-color: #302f30;
+  border-radius: 1px;
+  color: inherit;
+  padding: 0em 0.4em;
+  box-shadow: var(--shadow-elevation-high);
+  border: 0.1px solid #403d3d;
+}
+
+.details > h6 {
+  font-family: Spartan;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  font-weight: 100;
+  color: white;
+  padding: 0;
+  margin: 1.4em 0;
+}
+
+.details > p {
+  font-size: 0.95rem;
+  letter-spacing: 1.6px;
+  color: rgb(201, 192, 192);
+  color: white;
+  font-weight: 100;
+  padding: 0;
+  padding: 0em 0.1em;
+}
+.footer-leshen > .details {
+  background-color: #163a33;
+}
+.footer-griffin > .details {
+  background-color: #6d3030;
+}
+.footer-wraith > .details {
+  background-color: #2c5c5c;
+}
+.footer-troll > .details {
+  background-color: #292d39;
+}
+.footer-vampire > .details {
+  background-color: #91262d;
+}
+.footer-succubus > .details {
+  background-color: #643339;
+}
+.footer-kikimore > .details {
+  background-color: #313141;
+}
+.slide {
+  z-index: 50;
+  background-color: rgb(58, 57, 57);
+  color: rgb(168, 162, 162);
+  border-radius: 7px;
+  outline: none;
+  padding: 1.2em 1em;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1rem;
+  font-weight: 600;
+  opacity: 1;
+  border: 0.5px solid rgb(56, 56, 56);
+  backdrop-filter: blur(5px);
+  cursor: pointer;
+}
+
+.prev {
+  left: 32%;
+  top: 50%;
+  position: absolute;
+}
+
+.next {
+  position: absolute;
+  right: 32%;
+  top: 50%;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slide {
+  transition: all 0.3s;
+}
+
+@media (max-width: 1080px) {
+  .slide {
+    background-color: rgb(68, 66, 66);
+  }
+  .prev {
+    left: 0%;
+  }
+  .next {
+    right: 0%;
+  }
+}
+@media (max-width: 450px) {
+  .slide {
+    background-color: transparent;
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  .slide:hover {
+    background-color: rgb(68, 67, 67);
+  }
+  .succubuspng:hover {
+    transform: scale(0.9) translateY(-65px);
+  }
+
+  .scaleonzoom:hover {
+    transform: scale(1.39);
+  }
+  .leshenpng:hover {
+    transform: scale(1.4);
+  }
+
+  .wraithpng:hover {
+    transform: scale(0.9) translateY(-50px);
+  }
+  .trollpng:hover {
+    transform: scale(1.5) translateY(-30px);
+  }
+  .vampirepng:hover {
+    transform: scale(1.3);
+  }
+  .griffinpng:hover {
+    transform: scale(1.4);
+  }
+  .kikimorepng:hover {
+    transform: scale(1.1);
+  }
+}
+:root {
+  --shadow-color: 41deg 3% 15%;
+  --shadow-elevation-low: 0.3px 0.5px 0.5px hsl(var(--shadow-color) / 0.65),
+    0.4px 0.8px 0.8px -2px hsl(var(--shadow-color) / 0.48),
+    1.1px 2.2px 2.2px -4.1px hsl(var(--shadow-color) / 0.32);
+  --shadow-elevation-medium: 0.3px 0.5px 0.5px hsl(var(--shadow-color) / 0.68),
+    0.6px 1.2px 1.2px -1.3px hsl(var(--shadow-color) / 0.55),
+    1.9px 3.9px 3.9px -2.7px hsl(var(--shadow-color) / 0.42),
+    5.4px 10.8px 10.8px -4.1px hsl(var(--shadow-color) / 0.29);
+  --shadow-elevation-high: 0.3px 0.5px 0.5px hsl(var(--shadow-color) / 0.56),
+    0.8px 1.5px 1.5px -0.5px hsl(var(--shadow-color) / 0.51),
+    1.5px 2.9px 2.9px -1px hsl(var(--shadow-color) / 0.47),
+    2.7px 5.5px 5.5px -1.5px hsl(var(--shadow-color) / 0.42),
+    4.9px 9.7px 9.7px -2px hsl(var(--shadow-color) / 0.37),
+    8.2px 16.5px 16.4px -2.5px hsl(var(--shadow-color) / 0.32),
+    13.1px 26.3px 26.2px -3px hsl(var(--shadow-color) / 0.28),
+    20px 39.9px 39.8px -3.5px hsl(var(--shadow-color) / 0.23),
+    29px 58px 57.9px -4.1px hsl(var(--shadow-color) / 0.18);
+}
